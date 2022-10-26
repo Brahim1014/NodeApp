@@ -6,6 +6,7 @@ const app = express(); //Es wird eine INstanz von FrameWork Express vom Typ App 
 
 //Listen for Request
 app.listen(3000);
+
 app.get('/', (req, res) => { //I want here to Listen to The Page '/'
     //Send is an Express Methode
     // res.send('<p> Home Page </p>'); //Habe es auskommentiert, ansonsten hätten wir die SendFile Methode nicht angezeigt bekommen.

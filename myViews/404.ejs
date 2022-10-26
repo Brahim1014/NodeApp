@@ -4,21 +4,31 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>My Blog</title>
+    <title>My Blog| <%= title %>
+    </title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body {
+            background-color: rgba(75, 10, 10, 0.719);
+        }
+
+        .myUl {
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
     <nav>
         <div class="site-title">
             <a href="/">
-                <h1>Blog Ninja</h1>
+                <h1 style="color:black ;">Blog Ninja</h1>
             </a>
             <p> A net Ninja Page</p>
         </div>
-        <ul>
-            <li> <a href="/">Blogs</a></li>
-            <li><a href="/about"></a></li>
+        <ul class="myUl">
+            <li> <a href="/" style="color: black ;">Blogs</a></li>
+            <li><a href="/about">About</a></li>
             <li><a href="/blogs/create">New Blog</a></li>
         </ul>
     </nav>

@@ -4,8 +4,15 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>My Blog | </title>
+    <title>My Blog | <%= title %>
+    </title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body {
+            background-color: rgb(102, 165, 165);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,18 +23,35 @@
                     <%=name %>
                 </p>
                 <a href="/">
-                    <h1>Blog Ninja</h1>
+                    <h1>Blog Brahim</h1>
                 </a>
-                <p> A net Ninja Page</p>
+                <p> A net Brahim Page</p>
             </div>
             <ul>
                 <li> <a href="/">Blogs</a></li>
-                <li><a href="/about"></a></li>
+                <li><a href="/about">About</a></li>
                 <li><a href="/blogs/create">New Blog</a></li>
             </ul>
         </nav>
         <div class="blogs content">
             <h2>All Blogs</h2>
+            <% if(blogs.length>0){%>
+                <% blogs.forEach(blogs=> {%>
+                    <a class="single" href="/blogs/<%=blogs._id %>"> 
+                        <%=blogs.title%>
+                    </a>
+
+                    <h3 class="title">
+                        <%=blogs.title%>
+                    </h3>
+                    <p class="snippet">
+                        <%=blogs.snippet %>
+                    </p>
+                    <% })%>
+
+                        <% }%>
+
+
         </div>
 
 </body>

@@ -4,33 +4,38 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
     <title>My Blog</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 
-<body>
+<body
+    style="background-color: rgb(154, 154, 154) ; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
     <nav>
         <div class="site-title">
             <a href="/">
-                <h1>Blog Ninja</h1>
+                <h1>Blog Brahim</h1>
             </a>
-            <p> A net Ninja Page</p>
+            <p> A net Brahim Page</p>
+            <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; text-align: ;">
+                Please insert
+                your Data</h2>
         </div>
         <ul>
             <li> <a href="/">Blogs</a></li>
-            <li><a href="/about"></a></li>
+            <li><a href="/about"> About</a></li>
             <li><a href="/blogs/create">New Blog</a></li>
         </ul>
     </nav>
     <div class="create-blogs content">
-        <form>
-            <label for="title"></label>
-            <input type="text" id="title" required>
+        <form action="/blogs" method="post" style="text-align: center ;">
+            <label for="title"> Blog Title</label>
+            <input type="text" id="title" name="title" required>
             <label for="snippet">Blog Snippet</label>
-            <input type="text" id="snippet" required>
+            <input type="text" id="snippet" name="snippet" required>
             <label for="body">Blog Body</label>
-            <textarea id="body" required> </textarea>
-            <button>Submit</button>
+            <textarea id="body" required name="body">  </textarea>
+            <button style="background-color: oldlace ;">Submit</button>
         </form>
     </div>
 
